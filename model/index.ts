@@ -27,10 +27,6 @@ export class ChatModelFactory {
     init() {
         // register new model here
         this.modelMap.set(Site.You, new You(this.options))
-        this.modelMap.set(Site.Phind, new Phind(this.options))
-        this.modelMap.set(Site.Mcbbs, new Mcbbs(this.options))
-        this.modelMap.set(Site.ChatDemo, new ChatDemo(this.options))
-        this.modelMap.set(Site.Vita, new Vita(this.options))
     }
 
     get(model: Site): Chat | undefined {
